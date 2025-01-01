@@ -1,41 +1,128 @@
-/* Photo de profil */
+/* Reset margin and padding */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: sticky; /* Makes the navbar stick to the top while scrolling */
+    top: 0;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    z-index: 1000; /* Ensures it stays above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #007BFF;
+    border-radius: 5px;
+}
+
+/* Sections */
+.section {
+    padding: 50px;
+    text-align: center;
+}
+
+.section:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+.section:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* About Me Photo */
 .photo {
     display: block;
-    width: 120px; /* Réduit la taille à 120px */
+    width: 120px;
     height: 120px;
     border-radius: 50%;
     margin: 0 auto 20px;
-    object-fit: cover; /* S'assure que l'image reste bien cadrée */
+    object-fit: cover;
 }
 
-/* Section Expériences */
-.experiences {
-    padding: 50px 20px;
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Experience Logos */
 .experience {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 30px;
+    margin: 20px 0;
 }
 
 .experience .logo {
-    width: 120px; /* Réduit la largeur du logo */
+    width: 60px;
     height: 60px;
     margin-right: 20px;
-    object-fit: contain; /* S'assure que le logo reste proportionnel */
-    border: 1px solid #ddd; /* Optionnel : bordure légère pour une meilleure présentation */
-    border-radius: 8px; /* Coins légèrement arrondis */
+    object-fit: contain;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 .experience h3 {
     margin: 0 0 10px;
-    font-size: 1.2em; /* Réduction légère de la taille des titres */
 }
 
 .experience ul {
+    list-style: disc;
     margin: 0;
     padding-left: 20px;
-    list-style-type: disc;
-    font-size: 0.9em; /* Texte un peu plus petit */
+    text-align: left;
 }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .experience {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .experience .logo {
+        margin-bottom: 10px;
+    }
+}
+
