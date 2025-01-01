@@ -1,42 +1,41 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+/* Styles pour la section Présentation */
+.photo {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
 }
 
-header nav ul {
-    list-style: none;
-    background: #333;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-}
-
-header nav ul li {
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.main {
+.presentation {
     text-align: center;
-    padding: 50px;
+    padding: 50px 20px;
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #007BFF;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+/* Styles pour la section Expériences */
+.experiences {
+    padding: 50px 20px;
 }
 
-.btn:hover {
-    background: #0056b3;
+.experience {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.experience .logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.experience h3 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+}
+
+.experience ul {
+    margin: 0;
+    padding-left: 20px;
+    list-style-type: disc;
 }
