@@ -20,7 +20,7 @@
 }
 
 .experience .logo {
-    width: 60px; /* Réduit la largeur du logo */
+    width: 120px; /* Réduit la largeur du logo */
     height: 60px;
     margin-right: 20px;
     object-fit: contain; /* S'assure que le logo reste proportionnel */
