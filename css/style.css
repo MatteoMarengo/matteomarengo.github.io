@@ -1,18 +1,14 @@
-/* Styles pour la section Présentation */
+/* Photo de profil */
 .photo {
     display: block;
-    width: 150px;
-    height: 150px;
+    width: 120px; /* Réduit la taille à 120px */
+    height: 120px;
     border-radius: 50%;
     margin: 0 auto 20px;
+    object-fit: cover; /* S'assure que l'image reste bien cadrée */
 }
 
-.presentation {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-/* Styles pour la section Expériences */
+/* Section Expériences */
 .experiences {
     padding: 50px 20px;
 }
@@ -24,18 +20,22 @@
 }
 
 .experience .logo {
-    width: 80px;
-    height: 80px;
+    width: 60px; /* Réduit la largeur du logo */
+    height: 60px;
     margin-right: 20px;
+    object-fit: contain; /* S'assure que le logo reste proportionnel */
+    border: 1px solid #ddd; /* Optionnel : bordure légère pour une meilleure présentation */
+    border-radius: 8px; /* Coins légèrement arrondis */
 }
 
 .experience h3 {
     margin: 0 0 10px;
-    font-size: 1.5em;
+    font-size: 1.2em; /* Réduction légère de la taille des titres */
 }
 
 .experience ul {
     margin: 0;
     padding-left: 20px;
     list-style-type: disc;
+    font-size: 0.9em; /* Texte un peu plus petit */
 }
