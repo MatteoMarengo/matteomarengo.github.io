@@ -1,4 +1,4 @@
-/* Reset margin and padding */
+/* General Reset */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -7,15 +7,16 @@ body {
 
 /* Navigation Bar */
 .navbar {
-    position: sticky; /* Makes the navbar stick to the top while scrolling */
+    position: sticky;
     top: 0;
     background-color: #333;
     color: white;
     display: flex;
     justify-content: center;
     padding: 10px 0;
-    z-index: 1000; /* Ensures it stays above other elements */
+    z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
 }
 
 .navbar ul {
@@ -31,15 +32,20 @@ body {
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .navbar ul li a:hover {
     background-color: #007BFF;
     border-radius: 5px;
+    color: #fff;
 }
 
-/* Sections */
+.navbar.scrolled {
+    background-color: #222;
+}
+
+/* Section Layout */
 .section {
     padding: 50px;
     text-align: center;
@@ -53,7 +59,7 @@ body {
     background-color: #ffffff;
 }
 
-/* About Me Photo */
+/* Photo Styling */
 .photo {
     display: block;
     width: 120px;
@@ -114,6 +120,7 @@ footer {
     margin-top: 20px;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
     .experience {
         flex-direction: column;
@@ -125,4 +132,3 @@ footer {
         margin-bottom: 10px;
     }
 }
-
